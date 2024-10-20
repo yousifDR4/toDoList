@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+input[type="password"]::placeholder {
+  -webkit-text-security: disc !important;
+  letter-spacing: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 19px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f6f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dde2e5;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dde2e5;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
